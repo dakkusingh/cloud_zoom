@@ -1,0 +1,7 @@
+cloud_zoom.settings:
+ path: '/admin/config/system/cloud_zoom'
+ defaults:
+   _title: 'Cloud Zoom'
+   _form: 'Drupal\cloud_zoom\Form\SettingsForm'
+ requirements:
+   _permission: 'administer cloud_zoom'
