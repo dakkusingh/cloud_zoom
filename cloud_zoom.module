@@ -29,7 +29,7 @@ function cloud_zoom_library() {
   if ($path = _cloud_zoom_get_path()) {
     $module_path = drupal_get_path('module', 'cloud_zoom');
     $library = _cloud_zoom_check_path($path);
-    $library_base = basename($library->uri);
+    $library_base = dirname($library->uri);
 
     return array(
       'cloud-zoom' => array(
