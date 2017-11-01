@@ -171,7 +171,7 @@ function cloud_zoom_settings_info() {
       'default_value' =>  0,
       'form_type' => 'select',
      ),
-    'gallery_filedset' => array(
+    'gallery_fieldset' => array(
       'title' => t('Gallery settings'),
       'id' => FALSE,
       'description' => t('Gallery mode settings'),
@@ -184,7 +184,7 @@ function cloud_zoom_settings_info() {
       'description' => t('Set formatter as gallery mode with thumbs'),
       'default_value' =>  FALSE,
       'form_type' => 'checkbox',
-      'fieldset' => 'gallery_filedset',
+      'fieldset' => 'gallery_fieldset',
      ),
     'thumb_style' => array(
       'title' => t('Thumbnails image style'),
@@ -192,7 +192,7 @@ function cloud_zoom_settings_info() {
       'description' => '',
       'default_value' =>  0,
       'form_type' => 'select',
-      'fieldset' => 'gallery_filedset',
+      'fieldset' => 'gallery_fieldset',
      ),
     'zoom_position_fieldset' => array(
       'title' => t('Zoom area position'),
@@ -449,7 +449,7 @@ function cloud_zoom_field_formatter_view($entity_type, $entity, $field, $instanc
     $variables['#' . $key] = !empty($info['fieldset']) ? $settings[$info['fieldset']][$key] : $settings[$key];
   }
 
-  if (!$settings['gallery_filedset']['gallery_mode']) {
+  if (!$settings['gallery_fieldset']['gallery_mode']) {
     // Build elements for each item.
     foreach ($items as $delta => $item) {
       $element[$delta] = array(
