@@ -1,9 +1,0 @@
-name = Cloud Zoom
-description = Cloud Zoom (Professor Cloud) integration
-core = 7.x
-package = Cloud Zoom
-
-dependencies[] = image
-dependencies[] = libraries
-
-files[] = cloud_zoom.module
