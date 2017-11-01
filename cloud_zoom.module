@@ -195,7 +195,7 @@ function cloud_zoom_settings_info() {
       'fieldset' => 'gallery_filedset',
      ),
     'zoom_position_fieldset' => array(
-      'title' => t('Zoom area possition'),
+      'title' => t('Zoom area position'),
       'id' => FALSE,
       'description' => t('Zoom area location settings'),
       'default_value' =>  FALSE,
