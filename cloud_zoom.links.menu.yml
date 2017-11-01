@@ -1,0 +1,5 @@
+cloud_zoom.settings:
+  title: Cloud Zoom Settings
+  description: 'Configure Cloud Zoom module.'
+  route_name: cloud_zoom.settings
+  parent: system.admin_config_system
