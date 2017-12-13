@@ -552,6 +552,8 @@ function theme_cloud_zoom_image($variables) {
   $zoomed = $variables['zoom_style'] ? image_style_url($variables['zoom_style'], $item['uri']) : file_create_url($item['uri']);
   $rel = cloud_zoom_get_rel_string($variables);
 
+  $attributes = array('class' => array('cloud-zoom'), 'rel' => $rel);
+
   if (!empty($variables['colorbox']) && module_exists('colorbox')) {
     $attributes['class'][] = 'colorbox';
     $attributes['title'] = $item['title'];
